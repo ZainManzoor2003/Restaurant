@@ -1,0 +1,104 @@
+.products {
+    width: 100vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.products h3 {
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+}
+
+.products h3 span {
+    color: rgb(255, 193, 7);
+    padding-left: 10px;
+}
+
+.products .product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    width: 90vw;
+    gap: 20px 15px;
+    margin-top: 20px;
+}
+
+.product-card {
+    border: 2px solid rgb(255, 193, 7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.product-card .product-icons {
+    display: flex;
+    font-size: 25px;
+    gap: 8px;
+}
+
+.product-icons .cart,
+.eye,
+.heart {
+    border: 2px solid rgb(255, 193, 7);
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    transition: 0.2s linear;
+}
+
+.product-icons .cart:hover,
+.eye:hover,
+.heart:hover {
+    background-color: rgb(255, 193, 7);
+}
+
+.product-card img {
+    width: 250px;
+}
+
+.product-card h4 {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.product-card .stars {
+    display: flex;
+}
+
+.stars .star {
+    color: rgb(255, 193, 7);
+    font-size: 25px;
+}
+
+.product-card .price {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.product-card .price h4 {
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.product-card .price span {
+    font-size: 15px;
+    text-decoration: line-through;
+    font-weight: lighter;
+    margin-left: 5px;
+}
+
+@media only screen and (max-width:991px) {
+    .products h3 {
+        font-size: 35px;
+    }
+}

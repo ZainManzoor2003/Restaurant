@@ -1,0 +1,86 @@
+.menu{
+    width: 100vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.menu h3{
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+}
+.menu h3 span{
+    color: rgb(255, 193, 7);
+    padding-left: 10px;
+}
+.menu .cards {
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+    width: 90vw;
+    gap: 20px 10px;
+    margin-top: 20px;
+}
+.menu .cards .card{
+     height: 350px;
+     border: 2px solid rgb(255, 193, 7);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     gap: 10px;
+     transition: .3s linear;
+     cursor: pointer;
+}
+.card:hover{
+    background-color:rgba(255, 193, 7,0.3) ;
+}
+.card img{
+    width: 130px;
+    height: 100px;
+    object-fit: cover;
+}
+.card h4{
+    font-size: 20px;
+    font-weight: lighter;
+}
+.card .price{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.card .price h4{
+    font-weight: lighter;
+    font-size: 25px;
+}
+.card .price span{
+    font-size: 15px;
+    text-decoration: line-through;
+    font-weight: lighter;
+    margin-left: 5px;
+}
+.card .btn{
+    background-color: rgb(255, 193, 7);
+    border: none;
+    color: white;
+    width: 150px;
+    padding: 12px 0px;
+    font-size: 17px;
+    font-weight: lighter;
+    cursor: pointer;
+    transition: .2s linear;
+    margin-top: 10px;
+}
+.card .btn:hover{
+    width: 170px;
+}
+@media only screen and (max-width:991px){
+.menu h3{
+    font-size: 35px;
+}
+}

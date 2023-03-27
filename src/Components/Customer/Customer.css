@@ -1,0 +1,63 @@
+.customers{
+    width: 100vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+.customers h3{
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+}
+.customers h3 span{
+    color: rgb(255, 193, 7);
+    padding-left: 10px;
+}
+.customers .customer-cards {
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+    width: 90vw;
+    gap: 20px 15px;
+    margin-top: 20px;
+}
+.customer-card{
+     border: 2px solid rgb(255, 193, 7);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     gap: 10px;
+     padding-top: 30px;
+     padding-bottom: 30px;
+}
+.customer-card p{
+    color:#ccc;
+    padding: 5px 20px;
+    line-height: 1.8;
+    font-size: 15x;
+}
+.customer-card img:nth-child(3)
+{
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.customer-card h4{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.customer-card .stars .star{
+    font-size: 20px;
+    
+}
+
+@media only screen and (max-width:991px){
+    .customers h3{
+        font-size: 35px;
+    }
+    }

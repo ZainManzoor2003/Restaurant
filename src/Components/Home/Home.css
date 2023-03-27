@@ -1,0 +1,115 @@
+.home {
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(68, 68, 68, 0.35)) 50% center / cover, url(https://codingcirculate-restaurant-design.on.fleek.co/static/media/home-img.965e18e60a1521e7e1af) no-repeat;
+    /* background: url('https://codingcirculate-restaurant-design.on.fleek.co/static/media/home-img.965e18e60a1521e7e1af'); */
+    background-position: 50% center;
+    background-size: 100vw auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding-left: 7%;
+}
+
+.home .content {
+    width: 600px;
+    gap: 5px;
+}
+
+.content h3 {
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+.content h3:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.content h3 span {
+    color: rgb(255, 193, 7);
+}
+
+.content p {
+    line-height: 1.8;
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgba(238, 238, 238, 0.747);
+}
+
+.content .btn {
+    background-color: rgb(255, 193, 7);
+    border: none;
+    color: white;
+    width: 170px;
+    padding: 12px 0px;
+    font-size: 17px;
+    font-weight: lighter;
+    cursor: pointer;
+    transition: .2s linear;
+    margin-top: 10px;
+}
+
+.content .btn:hover {
+    width: 190px;
+}
+.home-records .row
+{
+    display: flex;
+    gap: 50px;
+    margin-bottom: -200px;
+    margin-top: 100px;
+}
+.row h4{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.row h4 span{
+    color: rgb(255, 193, 7);
+}
+
+@media only screen and (max-width:1220px){
+    .home {
+        background-position: 0;
+        background-size: auto 100vh;
+    }
+}
+@media only screen and (max-width:991px) {
+    .home {
+        padding-left: 0%;
+        align-items: center;
+    }
+    .home .content {
+        width: 400px;
+        text-align: center;
+        padding: 0px 30px;
+    }
+    .content h3 {
+        justify-content: center;
+        font-size: 30px;
+    }
+    .content p{
+        font-size: 12px;
+    }
+    .content .btn{
+        width: 130px;
+        font-size: 15px;
+    }
+    .content .btn:hover{
+        width: 150px;
+    }
+    .content .home-records{
+        margin-top: 200px;
+    }
+    .home-records .row{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .row h4{
+        font-size: 20px;
+    }
+    
+}

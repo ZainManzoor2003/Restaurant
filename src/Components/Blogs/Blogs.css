@@ -1,0 +1,87 @@
+.blogs {
+    width: 100vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.blogs h3 {
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.blogs h3 span {
+    color: rgb(255, 193, 7);
+    padding-left: 10px;
+}
+
+.blogs .blog-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    width: 85vw;
+    gap: 20px 15px;
+    margin-top: 20px;
+}
+
+.blog-card {
+    border: 2px solid rgb(255, 193, 7);
+}
+
+.blog-card img {
+    width: 100%;
+    object-fit: cover;
+    transition: 0.2s linear;
+    overflow: hidden;
+}
+
+.blog-card img:hover {
+   background-position: center;
+}
+.blog-card .after-img{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 20px;
+}
+.after-img h3{
+    font-size: 23px;
+    padding: 0px 0px;
+    font-weight: lighter;
+}
+.after-img h4{
+    font-size: 20px;
+    color: rgb(255, 193, 7);
+    font-weight: lighter;
+}
+.after-img p{
+    color: #ccc;
+    line-height: 1.8;
+}
+.after-img .btn{
+    background-color: rgb(255, 193, 7);
+    border: none;
+    color: white;
+    width: 130px;
+    padding: 8px 0px;
+    font-size: 17px;
+    font-weight: lighter;
+    cursor: pointer;
+    transition: .2s linear;
+    margin-top: 10px;
+}
+.after-img .btn:hover{
+    width: 150px;
+}
+
+@media only screen and (max-width:991px){
+    .blogs h3{
+        font-size: 35px;
+    }
+    .after-img h3{
+        font-size: 23px;
+    }
+}

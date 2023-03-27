@@ -1,0 +1,80 @@
+.about{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 20px;
+}
+.about h3{
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+.about h3 span{
+    color: rgb(255, 193, 7);
+    padding-right: 10px;
+}
+
+.about .content{
+    background-color: #13131a;
+    width: 80vw;
+    display: flex;
+    margin-top: 20px;
+}
+
+.about .content img{
+    width: 50%;
+    object-fit: cover;
+}
+.content .right-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px 0px;
+}
+.content .right-content h4{
+    font-size: 30px;
+    padding-left: 20px;
+}
+.content .right-content p{
+    font-size: 16px;
+    padding-left: 20px;
+}
+.content .right-content .btn{
+    width: 150px;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width:1300px)
+{
+    .about .content{
+        width: 90vw;
+    }
+
+}
+@media only screen and (max-width:991px){
+    .about .content{
+        width: 90vw;
+        flex-direction: column;
+    }
+    .about h3{
+        font-size: 35px;
+    }
+    .about .content img{
+        width: 100%;
+    }
+    .content .right-content h4{
+        font-size: 25px;
+    }
+    .content .right-content p{
+        font-size: 14px;
+    }
+    .content .right-content .btn{
+        width: 130px;
+    }
+    
+}

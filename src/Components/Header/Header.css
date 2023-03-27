@@ -1,0 +1,168 @@
+header {
+    background-color: black;
+    font-family: sans-serif;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    border-bottom: 3px solid #ffc107;
+    z-index: 1000;
+    position: fixed;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+}
+
+.header .logo img {
+    width: 80px;
+}
+
+.header nav ul {
+    display: flex;
+}
+
+ul li {
+    cursor: pointer;
+    width: 80px;
+    list-style: none;
+    text-align: center;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover {
+    color: #ffc107;
+    border-bottom: 1px solid #ffc107;
+    padding-bottom: 5px;
+    transition: .2s linear;
+}
+
+.header .icons {
+    color: white;
+    display: flex;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.icons div {
+    margin: 10px;
+}
+
+.icons div:hover {
+    color: #ffc107;
+    transition: .2s linear;
+}
+
+.icons .burger {
+    display: none;
+}
+
+.header .search-bar {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 7%;
+    top: 115%;
+    padding: 0px 10px;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: .2s linear;
+}
+
+.header .active {
+    transform: scaleY(1);
+}
+
+.header .non-active {
+    transform: scaleY(0);
+}
+
+.search-bar input {
+    outline: none;
+    border: none;
+    width: 450px;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.search-bar .search-icon {
+    cursor: pointer;
+    font-size: 25px;
+    transition: .2s linear;
+}
+
+.search-bar .search-icon:hover {
+    color: #ffc107;
+}
+
+@media only screen and (max-width:991px) {
+    .header {
+        width: 95vw;
+    }
+
+    .header .logo img {
+        width: 70px;
+    }
+
+    ul li {
+        width: 60px;
+        font-size: 15px;
+    }
+
+    .header .icons {
+        font-size: 23px;
+    }
+
+    .header .search-bar {
+        width: 85vw;
+    }
+
+    .search-bar input {
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .icons .burger {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 105%;
+        height: 100vh;
+        width: 250px;
+        background-color: black;
+        transition: 0.2s linear;
+    }
+
+    .header .nav-active {
+        right: -250px;
+    }
+
+    .header .nav-non-active {
+        right: 0px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        height: 50vh;
+    }
+
+    ul li {
+        padding: 15px 20px;
+    }
+    .header .icons{
+        font-size: 20px;
+    }
+}
